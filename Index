@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Início · Balcão do Investidor · CMF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">F</div>
+      <div class="brand-text"><strong>Balcão do Investidor</strong><span>Câmara Municipal de Faro</span></div>
+    </a>
+    <div class="navlinks">
+      <a href="como-funciona.html">Como Funciona</a>
+      <a href="jornada.html">Jornada do Investidor</a>
+      <a href="eixos.html">Eixos de Apoio</a>
+      <a href="plano.html">O Plano</a>
+      <a href="atendimento.html">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Investimento em Faro</div>
+      <h1>Um único balcão para <em>investir</em><br>em Faro.</h1>
+      <p class="lede">Ponto de contacto único do Município para quem quer instalar, expandir ou relocalizar um negócio na cidade — coordenando internamente todos os departamentos da Câmara para que o investidor não tenha de o fazer.</p>
+      <div class="cta-row">
+        <a href="atendimento.html" class="btn btn-primary">Pedir Acompanhamento →</a>
+        <a href="como-funciona.html" class="btn btn-ghost">Como funciona</a>
+      </div>
+    </div>
+    <div class="senha-wrap">
+      <div class="senha">
+        <div class="senha-top">
+          <div class="senha-label">Senha Digital</div>
+          <div class="senha-org">Balcão do Investidor · CMF</div>
+        </div>
+        <div class="senha-num">B<span>·</span>047</div>
+        <div class="senha-ticks" id="ticks"></div>
+        <div class="senha-bottom">
+          <span>16.07.2026</span>
+          <span>Faro, PT</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="section-num">Navegação</span><h2 style="margin-top:8px;">Explorar o Balcão</h2></div>
+      <p>Cada secção é agora a sua própria página — navegue livremente.</p>
+    </div>
+    <div class="quicklinks">
+      <a class="quicklink" href="como-funciona.html">
+        <span class="ql-tag">01</span>
+        <h3>Como Funciona</h3>
+        <p>O que é o Balcão e a que se compromete.</p>
+      </a>
+      <a class="quicklink" href="jornada.html">
+        <span class="ql-tag">02</span>
+        <h3>Jornada do Investidor</h3>
+        <p>As seis fases, do contacto à rede local.</p>
+      </a>
+      <a class="quicklink" href="eixos.html">
+        <span class="ql-tag">03</span>
+        <h3>Eixos de Apoio</h3>
+        <p>As quatro frentes da estratégia de investimento.</p>
+      </a>
+      <a class="quicklink" href="plano.html">
+        <span class="ql-tag">04</span>
+        <h3>O Plano</h3>
+        <p>Como este balcão se insere em "Tens Faro para o Negócio?"</p>
+      </a>
+      <a class="quicklink" href="atendimento.html">
+        <span class="ql-tag">05</span>
+        <h3>Contacto</h3>
+        <p>Tire a sua senha e fale com a equipa.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>80.256</b><span>habitantes (2026)</span></div>
+      <div class="stat"><b>4</b><span>eixos de apoio ao investimento</span></div>
+      <div class="stat"><b>1</b><span>ponto de contacto único</span></div>
+      <div class="stat"><b>5 dias</b><span>úteis até primeira resposta</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:88px;">
+  <div class="wrap">
+    <div class="callout">
+      <div class="callout-icon">◈</div>
+      <div>
+        <h4>Kit de boas-vindas Faro Connect</h4>
+        <p>Cada investidor acompanhado pelo Balcão recebe um cartão NFC com acesso digital a contactos, documentação e apoios — a primeira interação física com a marca do Balcão do Investidor.</p>
+      </div>
+      <a href="atendimento.html" class="btn btn-ghost" style="white-space:nowrap;">Saber mais →</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot-grid">
+    <div><b>Câmara Municipal de Faro</b><br>Balcão do Investidor — Divisão de Desenvolvimento Económico</div>
+    <div>investir@cm-faro.pt (exemplo)<br>+351 289 XXX XXX (exemplo)</div>
+    <div>Eixo I de "Tens Faro para o Negócio?"<br>Protótipo de trabalho — não publicado oficialmente</div>
+  </div>
+</footer>
+
+<div class="draft-flag">RASCUNHO · v0.2</div>
+
+<script>
+  const ticks = document.getElementById('ticks');
+  if(ticks){ for(let i=0;i<40;i++){ const d=document.createElement('div'); d.style.height=(8+Math.random()*14)+'px'; ticks.appendChild(d); } }
+  document.querySelectorAll('.eixo').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ document.querySelectorAll('.eixo').forEach(e=>e.classList.remove('active')); el.classList.add('active'); });
+  });
+</script>
+</body>
+</html>
